@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/w3-icon.png" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<title>AdminDash</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand text-uppercase text-nowrap" href="#">
+					<!-- <img src="" alt="" width="35" class="d-inline-block align-text-bottom"> -->
+          			<span>Admin Dashboard</span>
+        		</a>
+<!--==================== Sidebar Nav ========================-->
+				<ul class="sidebar-nav">
+					<li class="sidebar-item active">
+						<a class="sidebar-link" href="dashboard.html">
+              			<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+              				<i class="align-middle bi bi-diagram-3-fill"></i> <span class="align-middle">Departments</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+              				<i class="align-middle" data-feather="user"></i> <span class="align-middle">Administrators</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+              				<i class="align-middle" data-feather="users"></i> <span class="align-middle">All Staff</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+              				<i class="align-middle bi bi-car-front"></i><span class="align-middle">Trips</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+              				<i class="align-middle bi bi-cash-coin"></i> <span class="align-middle">Budgets & Insurance</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="#">
+              				<i class="align-middle bi bi-bus-front"></i> <span class="align-middle">Shuttle</span>
+            			</a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="ui-cards.html">
+              				<i class="align-middle bi bi-files"></i> <span class="align-middle">Documents</span>
+            			</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+<!--================== Top Navbar ====================-->
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          			<i class="hamburger align-self-center"></i>
+        		</a>
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+                				<i class="align-middle" data-feather="settings"></i>
+              				</a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                				<img src="img/avatars/avatar.png" class="avatar img-fluid rounded me-1" alt="User Avatar" />
+								<span class="text-dark">John Doe</span>
+              				</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user-x"></i>
+									Profile
+								</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="activity"></i> 
+									Activity
+								</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="settings"></i> 
+									Settings
+								</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item text-danger" href="#"><i class="align-middle me-1" data-feather="power"></i>
+									Log out
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+					<h1 class="h3 text-primary mb-3"><strong>Welcome Back!</strong></h1>
+					<div class="row">
+						<div class="col-md-3 mb-3">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Sales</h5>
+										</div>
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="truck"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">1354</h1>
+									<div class="mb-0">
+										<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+										<span class="text-muted">Since last month</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Earnings</h5>
+										</div>
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="dollar-sign"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">$145k</h1>
+									<div class="mb-0">
+										<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 15.45% </span>
+										<span class="text-muted">Since last month</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Orders</h5>
+										</div>
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="shopping-cart"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">185</h1>
+									<div class="mb-0">
+										<span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -2.65% </span>
+										<span class="text-muted">Since last month</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 mb-3">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col mt-0">
+											<h5 class="card-title">Visitors</h5>
+										</div>
+										<div class="col-auto">
+											<div class="stat text-primary">
+												<i class="align-middle" data-feather="users"></i>
+											</div>
+										</div>
+									</div>
+									<h1 class="mt-1 mb-3">12.54</h1>
+									<div class="mb-0">
+										<span class="text-info"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+										<span class="text-muted">Since last month</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+					<div class="row">
+						
+					</div>
+
+					<div class="row">
+						
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<!-- <script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
+			document.getElementById("datetimepicker-dashboard").flatpickr({
+				inline: true,
+				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
+				nextArrow: "<span title=\"Next month\">&raquo;</span>",
+				defaultDate: defaultDate
+			});
+		});
+	</script> -->
+
+</body>
+
+</html>
