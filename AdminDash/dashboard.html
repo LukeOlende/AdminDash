@@ -6,8 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="shortcut icon" href="img/icons/icon-cube.png" />
+	<link rel="shortcut icon" href="img/icons/logo.png"/>
 
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	<title>AdminDash</title>
 
@@ -93,17 +94,17 @@
 								<span class="text-dark">John Doe</span>
               				</a>
 							<div class="dropdown-menu dropdown-menu-end">
-								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user-x"></i>
+								<a class="dropdown-item w3-hover-teal" href="pages-profile.html"><i class="align-middle me-1" data-feather="user-x"></i>
 									Profile
 								</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="activity"></i> 
+								<a class="dropdown-item w3-hover-teal" href="#"><i class="align-middle me-1" data-feather="activity"></i> 
 									Activity
 								</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="settings"></i> 
+								<a class="dropdown-item w3-hover-teal" href="#"><i class="align-middle me-1" data-feather="settings"></i> 
 									Settings
 								</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item text-danger" href="#"><i class="align-middle me-1" data-feather="power"></i>
+								<a class="dropdown-item w3-hover-red text-danger" href="#"><i class="align-middle me-1" data-feather="power"></i>
 									Log out
 								</a>
 							</div>
@@ -142,7 +143,7 @@
 								<div class="card-body">
 									<div class="row">
 										<div class="col mt-0">
-											<h5 class="card-title">Earnings</h5>
+											<h5 class="card-title">Revenue</h5>
 										</div>
 										<div class="col-auto">
 											<div class="stat text-primary">
@@ -203,14 +204,14 @@
 					</div>
 						
 					<div class="row">
-						<div class="col-md-6 mb-3">
+						<div class="col-md-8 mb-3">
 							<div class="card flex-fill w-100">
 								<div class="card-header">
 									<h5 class="card-title mb-0">Monthly Sales</h5>
 								</div>
-								<div class="card-body py-3">
-									<div class="chart">
-										<canvas id="chart-dashboard-line" ></canvas>
+								<div class="card-body">
+									<div id="chart">
+										<!-- <canvas class="chart" id="chart" width="400" height="200"></canvas> -->
 									</div>
 								</div>
 							</div>
@@ -233,8 +234,8 @@
 	</div>
 
 	<script src="js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 	<script src="/AdminDash/js/script.js"></script>
-
 	<!-- <script>
 		document.addEventListener("DOMContentLoaded", function() {
 			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
