@@ -1,19 +1,40 @@
-var options = {
-    chart: {
-        type: 'line'
+const ctx = document.getElementById('line-chart');
+
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul'],
+        datasets: [{
+            data: [10000,20000,15000,30000,14500,25000,19000],
+            borderWidth: 1
+        }]
     },
-    series: [{
-        name: 'sales',
-        data: [10000,16000,22000,12000,9600,7000,
-            9800,17000,17000,23000,23000,26000]
-    }],
-    xaxis: {
-        categories: ['Jan','Feb','Mar','Apr','May','Jun',
-        'Jul','Aug','Sep','Oct','Nov','Dec']
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
     }
-  }
-  
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-  
-chart.render();
-  
+});
+
+const ctz = document.getElementById('bar-chart');
+
+new Chart(ctz, {
+    type: 'bar',
+    data: {
+        labels: ['Jan','Feb','Mar','Apr','May','Jun','Jul'],
+        datasets: [{
+            data: [12000,17000,19000,15000,12000,20000,25000],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
